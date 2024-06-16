@@ -49,12 +49,13 @@ public class MainTrivial {
 					System.out.println("Turno del equipo: " + team.getName());
 
 					// Mostrar puntuaciones actuales
+					printHashtagLine(8);
 					System.out.println("Puntuaciones actuales:");
 					printHashtagLine(4);
 					for (Team t : teams) {
 						System.out.println(t.getName() + ": " + t.getPoints() + " puntos");
 					}
-					printHashtagLine(4);
+					printHashtagLine(8);
 
 					List<String> remainingTopics = new ArrayList<>();
 					for (String topic : topicNames) {
@@ -117,21 +118,6 @@ public class MainTrivial {
 			}
 		}
 	}
-
-//	private static String getCorrectAnswer(Question question) {
-//		switch (question.getRightOption()) {
-//		case 1:
-//			return question.getAnswer1();
-//		case 2:
-//			return question.getAnswer2();
-//		case 3:
-//			return question.getAnswer3();
-//		case 4:
-//			return question.getAnswer4();
-//		default:
-//			return "";
-//		}
-//	}
 
 	public static void title(String text) {
 		int length = text.length();
